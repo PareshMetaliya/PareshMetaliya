@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Paresh Metaliya</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Paresh Metaliya</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/pic1.gif" alt="Paresh Metaliya profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Paresh Metaliya</h1>
+        <p class="section__text__p2">MERN Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/PareshMetaliya.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="http://www.linkedin.com/in/PareshMetaliya" target="_blank">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+
+          <a href="https://github.com/PareshMetaliya" target="_blank">
+            <img src="./assets/github.png" alt="My Github profile" class="icon"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Newbie<br />project-driven MERN Stack skills.</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.E.<br />Electronics & Communication</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am an aspiring web developer currently focused on mastering the
+              MERN Stack. My journey in web development is project-driven, as I
+              firmly believe that hands-on experience is the most effective way
+              to learn and grow. With each project, I am honing my skills in
+              building dynamic and interactive web applications.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>REACT.JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- ------------------------------------------------ -->
+          <div class="project section-container">
+            <div class="project_text">
+              <h1>
+                MERN Stack Pizza Ordering App with JWT Authentication, Redux
+                Cart, User and Admin Panels
+              </h1>
+              <p class="project_para">
+                As a beginner in the MERN stack, I built a pizza ordering
+                application with the following key features:
+              </p>
+
+              <ul>
+                <li>
+                  <strong>JWT Authentication:</strong> Secure user
+                  authentication using JSON Web Tokens (JWT).
+                </li>
+                <li>
+                  <strong>Redux Cart:</strong> Enhanced shopping experience with
+                  a Redux-based shopping cart.
+                </li>
+                <li>
+                  <strong>User Panel:</strong> User-friendly dashboard for
+                  profile updates, order history, and tracking.
+                </li>
+                <li>
+                  <strong>Order Status View:</strong> Transparent order tracking
+                  from preparation to delivery.
+                </li>
+                <li>
+                  <strong>Admin Panel:</strong> Powerful menu management for
+                  adding, editing, and updating pizza products.
+                </li>
+                <li>
+                  <strong>Order Status Updates:</strong> Real-time order status
+                  updates for efficient communication.
+                </li>
+                <li>
+                  <strong>Payment Options:</strong> Multiple payment options
+                  including Cash on Delivery (COD) and Online Payment via
+                  RazorPay gateway.
+                </li>
+              </ul>
+
+              <p class="project_para">
+                I gained hands-on experience in MongoDB, Express.js, React.js,
+                Node.js, Redux, JWT authentication, UI/UX design, and project
+                management during this project. It's a testament to my growth
+                and commitment to web development.
+              </p>
+            </div>
+            <div class="details-container color-container">
+              <div class="pizza">
+                <div class="article-container">
+                  <img
+                    src="./assets/project-1.png"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+                </div>
+              </div>
+              <h2 class="experience-sub-title project-title">Pizza App</h2>
+              <div class="btn-container">
+                <a
+                  class="btn btn-color-2 project-btn"
+                  href="https://github.com/PareshMetaliya/PizzaOrderApp"
+                  target="_blank"
+                >
+                  Github
+                </a>
+
+                <a
+                  class="btn btn-color-2 project-btn"
+                  href="https://pizza-app-frontend-mocha.vercel.app/"
+                  target="_blank"
+                >
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ------------------------------------------------------- -->
+          <div class="project section-container">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <div class="pizza">
+                  <img
+                    src="./assets/project-2.png"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+                </div>
+              </div>
+              <h2 class="experience-sub-title project-title">i_Notebook</h2>
+              <div class="btn-container">
+                <a
+                  class="btn btn-color-2 project-btn"
+                  href="https://github.com/PareshMetaliya/iNotebook"
+                  target="_blank"
+                >
+                  Github
+                </a>
+                <a
+                  class="btn btn-color-2 project-btn"
+                  href="https://i-notebook-frontend-navy.vercel.app/"
+                  target="_blank"
+                >
+                  Live Demo
+                </a>
+              </div>
+            </div>
+            <div class="project_text">
+              <h1>
+                MERN Stack Notebook App with JWT Authentication and Context API
+              </h1>
+              <p class="project_para">
+                In my journey as a MERN stack developer, I created a dynamic
+                Notebook App equipped with essential features:
+              </p>
+
+              <ul>
+                <li>
+                  <strong>JWT Authentication:</strong> Implementing robust user
+                  authentication with JSON Web Tokens (JWT).
+                </li>
+                <li>
+                  <strong>Context API:</strong> Utilizing the Context API for
+                  efficient state management and seamless data sharing.
+                </li>
+                <li>
+                  <strong>CRUD Functionality:</strong> Empowering users to
+                  effortlessly add, update, and delete their notes.
+                </li>
+              </ul>
+
+              <p class="project_para">
+                Through this project, I gained hands-on experience with this
+                technology stack and demonstrated my dedication to web
+                development and continuous growth as a developer.
+              </p>
+            </div>
+          </div>
+          <!-- ------------------------------------------------------------- -->
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:examplemail@gmail.com">metaliya.paresh@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="http://www.linkedin.com/in/PareshMetaliya" target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Paresh Metaliya. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
